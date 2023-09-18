@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Button, Heading, Tag, Text } from "../components";
+import { Button, Heading, Input, Tag, Text, TextArea } from "../components";
 
 const Index = () => {
 	const [isClick, setIsClick] = useState(false);
@@ -17,6 +17,12 @@ const Index = () => {
 				Arrow
 			</Button>
 			<Button appearance="ghost" arrow="down" >Arrow Down</Button>
+
+			<br />
+			<Input placeholder="Enter" />
+			<div>
+				<TextArea placeholder="Message" />
+			</div>
 		</div>
 	)
 };
