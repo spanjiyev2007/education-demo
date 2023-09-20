@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Button, Heading, Input, Rating, Tag, Text, TextArea } from "../components";
+import { Button, Card, Heading, Input, Rating, Tag, Text, TextArea } from "../components";
 
 const Index = () => {
 	const [isClick, setIsClick] = useState(false);
@@ -28,6 +28,9 @@ const Index = () => {
 			<Rating rating={4} />
 			<br />
 			<Rating rating={rating} isEditabled={true} setRating={setRating} />
+			<br />
+			<Card color='white'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio numquam quibusdam nulla cum ipsa explicabo aperiam doloremque! Itaque ducimus amet aspernatur? Hic minima in inventore laudantium numquam doloribus accusantium voluptatibus.</Card>
+			<Card color='primary'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio numquam quibusdam nulla cum ipsa explicabo aperiam doloremque! Itaque ducimus amet aspernatur? Hic minima in inventore laudantium numquam doloribus accusantium voluptatibus.</Card>
 		</div>
 	)
 };
